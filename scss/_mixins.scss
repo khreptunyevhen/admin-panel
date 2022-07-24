@@ -1,0 +1,14 @@
+@mixin flex-jc-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin circle {
+  --size: 10px;
+  position: absolute;
+  content: '';
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--size);
+}

@@ -1,0 +1,41 @@
+.header {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+
+  &__container {
+    @include flex-jc-center;
+  }
+  &__logo {
+  }
+  &__form {
+  }
+  &__list {
+  }
+  &__btn {
+    margin-right: 0;
+  }
+  &__user {
+  }
+
+  .material-symbols-sharp {
+    font-variation-settings: 'FILL' 1;
+    cursor: pointer;
+  }
+  .form-search {
+    input {
+      width: 450px;
+      border-radius: var(--box-border-radius);
+      border: 1px solid var(--primary-text-color);
+      background-color: transparent;
+      padding: 10px 20px;
+      color: var(--primary-text-color);
+
+      &::placeholder {
+        color: var(--primary-text-color);
+        font-family: var(--font-family);
+      }
+    }
+  }
+}
+
+

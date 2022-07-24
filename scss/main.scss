@@ -1,0 +1,54 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+
+@import '_vars.scss';
+@import '_mixins';
+
+// BLOCKS
+@import '_header.scss';
+
+// COMPONENTS
+@import '_logo';
+@import '_buttons';
+@import '_list';
+@import '_user';
+
+
+// COMMON
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--primary-text-color);
+  background-color: var(--dark-color);
+  font-size: var(--fz-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+input {
+  border: none
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+}

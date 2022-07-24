@@ -1,0 +1,16 @@
+.user {
+  @include flex-jc-center;
+  gap: 10px;
+
+  &__photo {
+    --size: 40px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--size);
+    overflow: hidden;
+  }
+
+  .material-symbols-sharp {
+    cursor: pointer;
+  }
+}

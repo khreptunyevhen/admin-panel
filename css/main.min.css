@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+:root {
+  --primary-color: #191c24;
+  --primary-hover-color: #0f1015;
+  --primary-text-color: #6b6f8d;
+  --dark-color: #000;
+  --success-color: #00d25b;
+  --danger-color: #fc424a;
+  --light-color: #fff;
+  --font-family: 'Rubik', sans-serif;
+  --fz-primary: 15px;
+  --box-border-radius: 6px;
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__btn {
+  margin-right: 0;
+}
+
+.header .material-symbols-sharp {
+  font-variation-settings: 'FILL' 1;
+  cursor: pointer;
+}
+
+.header .form-search input {
+  width: 450px;
+  border-radius: var(--box-border-radius);
+  border: 1px solid var(--primary-text-color);
+  background-color: transparent;
+  padding: 10px 20px;
+  color: var(--primary-text-color);
+}
+
+.header .form-search input::-webkit-input-placeholder {
+  color: var(--primary-text-color);
+  font-family: var(--font-family);
+}
+
+.header .form-search input:-ms-input-placeholder {
+  color: var(--primary-text-color);
+  font-family: var(--font-family);
+}
+
+.header .form-search input::-ms-input-placeholder {
+  color: var(--primary-text-color);
+  font-family: var(--font-family);
+}
+
+.header .form-search input::placeholder {
+  color: var(--primary-text-color);
+  font-family: var(--font-family);
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 5.5px;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: var(--box-border-radius);
+  background-color: var(--success-color);
+  gap: 6px;
+  padding: 2px 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(0, 210, 91, 0.5);
+  -webkit-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+}
+
+.list__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.list__item-success, .list__item-danger {
+  position: relative;
+}
+
+.list__item-success::after, .list__item-danger::after {
+  --size: 10px;
+  position: absolute;
+  content: '';
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--size);
+  border: 1px solid var(--primary-color);
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(30%, -10%);
+          transform: translate(30%, -10%);
+}
+
+.list__item-success::after {
+  background-color: var(--success-color);
+}
+
+.list__item-danger::after {
+  background-color: var(--danger-color);
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.user__photo {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--size);
+  overflow: hidden;
+}
+
+.user .material-symbols-sharp {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--primary-text-color);
+  background-color: var(--dark-color);
+  font-size: var(--fz-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+input {
+  border: none;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+}

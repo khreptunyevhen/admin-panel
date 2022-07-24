@@ -1,0 +1,25 @@
+.list {
+
+  &__body {
+    @include flex-jc-center;
+    gap: 20px;
+  }
+  &__item-success,
+  &__item-danger {
+    position: relative;
+  }
+  &__item-success::after,
+  &__item-danger::after {
+    @include circle;
+    border: 1px solid var(--primary-color);
+    top: 0;
+    right: 0;
+    transform: translate(30%, -10%);
+  }
+  &__item-success::after {
+    background-color: var(--success-color);
+  }
+  &__item-danger::after {
+    background-color: var(--danger-color); 
+  }
+}
