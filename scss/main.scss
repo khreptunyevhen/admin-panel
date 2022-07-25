@@ -5,17 +5,6 @@
 @import '_vars.scss';
 @import '_mixins';
 
-// BLOCKS
-@import '_header.scss';
-@import '_sidebar.scss';
-
-// COMPONENTS
-@import '_logo';
-@import '_buttons';
-@import '_list';
-@import '_user';
-
-
 // COMMON
 * {
   margin: 0;
@@ -48,6 +37,18 @@ button {
 input {
   border: none
 }
+
+// COMPONENTS
+@import '_logo';
+@import '_list';
+@import '_user';
+@import '_buttons';
+
+// BLOCKS
+@import '_header.scss';
+@import '_sidebar.scss';
+
+
 
 .container {
   max-width: 2000px;
