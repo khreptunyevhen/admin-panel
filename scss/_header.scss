@@ -2,19 +2,30 @@
   background-color: var(--primary-color);
   color: var(--light-color);
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  padding: 10px 0;
+  min-height: 60px;
+
   &__container {
     @include flex-jc-center;
-  }
-  &__logo {
+    gap: 20px;
+
+    & > .material-symbols-sharp {
+      font-size: 18px;
+    }
   }
   &__form {
+    
   }
   &__list {
+
   }
   &__btn {
     margin-right: 0;
-  }
-  &__user {
   }
 
   .material-symbols-sharp {
@@ -22,8 +33,10 @@
     cursor: pointer;
   }
   .form-search {
+    max-width: 560px;
+
     input {
-      width: 450px;
+      width: 100%;
       border-radius: var(--box-border-radius);
       border: 1px solid var(--primary-text-color);
       background-color: transparent;

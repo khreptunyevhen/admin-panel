@@ -2,24 +2,30 @@
 
   &__body {
     @include flex-jc-center;
-    gap: 20px;
+    
   }
-  &__item-success,
-  &__item-danger {
+  &__item {
+    padding: 0 10px;
+  }
+  &__item:not(:last-child) {
+    border-right: 1px solid var(--primary-text-color);
+  }
+  &__item-success .material-symbols-sharp,
+  &__item-danger .material-symbols-sharp {
     position: relative;
   }
-  &__item-success::after,
-  &__item-danger::after {
+  &__item-success .material-symbols-sharp::after,
+  &__item-danger .material-symbols-sharp::after {
     @include circle;
     border: 1px solid var(--primary-color);
     top: 0;
     right: 0;
-    transform: translate(30%, -10%);
+    transform: translate(20%, -10%);
   }
-  &__item-success::after {
+  &__item-success .material-symbols-sharp::after {
     background-color: var(--success-color);
   }
-  &__item-danger::after {
+  &__item-danger .material-symbols-sharp::after {
     background-color: var(--danger-color); 
   }
 }

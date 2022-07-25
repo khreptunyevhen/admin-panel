@@ -9,6 +9,9 @@
     border-radius: var(--size);
     overflow: hidden;
   }
+  &__info {
+    @include flex-jc-center;
+  }
 
   .material-symbols-sharp {
     cursor: pointer;
