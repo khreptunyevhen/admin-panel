@@ -70,25 +70,154 @@
   <!-- END OF HEADER -->
   <section>
     <h1 class="hidden">CORONA admin panel</h1>
-    <div class="container main-grid">
+    <div class="container-large main-grid">
       <aside class="sidebar">
+        <div class="sidebar__user user">
+          <img src="./img/user.jpg" alt="user photo" class="user__photo">
+          <div class="user__info">
+            <p class="sidebar__user-name user__name">Henry Clain
+              <br>
+            <span class="user__member">Gold Member</span>
+            </p>
+            <button class="user__btn">
+              <span class="material-symbols-sharp">
+                more_vert
+              </span>
+            </button>
+          </div>
+        </div>
+        <!-- END OF USER -->
+        <h2 class="sidebar__title">Navigation</h2>
         <nav class="sidebar__nav nav">
           <ul class="nav__body">
-            <li class="nav__item">
+            <li class="nav__item active">
               <a href="#!" class="nav__link">
-                <span class="material-symbols-sharp">
+                <span class="material-symbols-sharp symbol-color--1">
                   dashboard
                 </span>
                 <span class="nav__link-text">Dashboard</span>
               </a>
             </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">
+                <span class="material-symbols-sharp symbol-color--2">
+                  computer
+                </span>
+                <span class="nav__link-text">Basic UI Elements</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">
+                <span class="material-symbols-sharp symbol-color--3">
+                  list
+                </span>
+                <span class="nav__link-text">Form Elements</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">
+                <span class="material-symbols-sharp symbol-color--4">
+                  table
+                </span>
+                <span class="nav__link-text">Tables</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">
+                <span class="material-symbols-sharp symbol-color--5">
+                  signal_cellular_alt
+                </span>
+                <span class="nav__link-text">Charts</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">
+                <span class="material-symbols-sharp symbol-color--6">
+                  remember_me
+                </span>
+                <span class="nav__link-text">Icons</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">
+                <span class="material-symbols-sharp symbol-color--7">
+                  security
+                </span>
+                <span class="nav__link-text">User Pages</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">
+                <span class="material-symbols-sharp symbol-color--8">
+                  dashboard
+                </span>
+                <span class="nav__link-text">Documentation</span>
+              </a>
+            </li>
           </ul>
+          <!-- END OF NAVIGATION -->
         </nav>
       </aside>
       <!-- END OF SIDEBAR -->
       <main class="main-section">
-        fggfg
+        <div class="update">
+          <img src="./img/main/update.png" alt="update to PRO" class="update__image">
+          <div class="update__content">
+            <h2 class="update__title">Want even more features?</h2>
+            <p class="update__text">Check out our Pro version with 5 unique layouts!</p>
+          </div>
+          <a href="#!" class="btn btn--transparent">Update to PRO</a>
+        </div>
+        <!-- END OF UPDATE -->
+        <div class="price">
+          <div class="price__item">
+            <div class="price__content">
+              <h2 class="price__value">$12.34 <span>+3.5%</span></h2>
+              <div class="price__text">
+                <p>Potential growth</p>
+              </div>
+            </div>
+            <span class="material-symbols-sharp symbol--success">
+              north_east
+            </span>
+          </div>
+          <div class="price__item">
+            <div class="price__content">
+              <h2 class="price__value">$17.34 <span>+11.5%</span></h2>
+              <div class="price__text">
+                <p>Revenue current</p>
+              </div>
+            </div>
+            <span class="material-symbols-sharp symbol--success">
+              north_east
+            </span>
+          </div>
+          <div class="price__item">
+            <div class="price__content">
+              <h2 class="price__value">$12.34 <span class="price__value--danger">-2.5%</span></h2>
+              <div class="price__text">
+                <p>Daily Income</p>
+              </div>
+            </div>
+            <span class="material-symbols-sharp symbol--danger">
+              south_west
+            </span>
+          </div>
+          <div class="price__item">
+            <div class="price__content">
+              <h2 class="price__value">$31.53 <span>+5.5%</span></h2>
+              <div class="price__text">
+                <p>Expense current</p>
+              </div>
+            </div>
+            <span class="material-symbols-sharp symbol--success">
+              north_east
+            </span>
+          </div>
+        </div>
+        <!-- END OF PRICE -->
       </main>
+      <!-- END OF MAIN SECTION -->
     </div>  
   </section>
 </body>

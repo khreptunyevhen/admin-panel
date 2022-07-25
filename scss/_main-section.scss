@@ -1,0 +1,7 @@
+.main-section {
+  @include flex-column;
+  
+  background-color: var(--dark-color);
+  padding: 20px;
+  gap: 20px;
+}

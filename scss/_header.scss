@@ -1,6 +1,7 @@
 .header {
   background-color: var(--primary-color);
   color: var(--light-color);
+  z-index: 50;
 
   position: fixed;
   top: 0;
@@ -15,7 +16,7 @@
     gap: 20px;
 
     & > .material-symbols-sharp {
-      margin-left: 90px;
+      margin-left: 36px;
       font-size: 18px;
     }
     #menu-right {
@@ -36,6 +37,7 @@
   .material-symbols-sharp {
     font-variation-settings: 'FILL' 1;
     cursor: pointer;
+    font-size: 20px;
   }
   .form-search {
     width: 560px;

@@ -1,3 +1,70 @@
 .sidebar {
   background-color: var(--primary-color);
+  height: 100vh;
+  padding: 10px 20px;
+
+  &__user {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    &-name {
+      margin-right: 50px;
+    }
+  }
+  &__title {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  &__nav {
+
+    .symbol-color--1,
+    .symbol-color--6  {
+      color: var(--purple-color);
+    }
+    .symbol-color--2,
+    .symbol-color--7 {
+      color: var(--orange-color);
+    }
+    .symbol-color--3,
+    .symbol-color--8 {
+      color: var(--danger-color);
+    }
+    .symbol-color--4 {
+      color: var(--secondary-color);
+    }
+    .symbol-color--5 {
+      color: var(--success-color);
+    }
+  }
+}
+
+// MEDIA
+
+// PC
+@media (max-width: 1087.98px) {
+  
+}
+// TABLET
+@media (max-width: 991.98px) {
+
+  .sidebar {
+
+    &__title {
+      display: none;
+    }
+  }
+  &.user {
+
+    &__info {
+      display: none;
+    }
+  }
+}
+
+// MOBILE
+@media (max-width: 767.98px) {
+  .sidebar {
+    display: none;
+  }
 }

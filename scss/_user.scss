@@ -1,6 +1,7 @@
 .user {
   @include flex-jc-center;
   gap: 10px;
+  color: var(--light-color);
 
   &__photo {
     --size: 40px;
@@ -12,8 +13,13 @@
   &__info {
     @include flex-jc-center;
   }
+  &__member {
+    color: var(--primary-text-color);
+    font-size: 12px;
+  }
 
   .material-symbols-sharp {
     cursor: pointer;
+    color: var(--primary-text-color);
   }
 }

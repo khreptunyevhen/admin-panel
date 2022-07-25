@@ -1,5 +1,6 @@
 .btn {
   @include flex-jc-center;
+
   border-radius: var(--box-border-radius);
   background-color: var(--success-color);
   min-width: 166px;
@@ -11,5 +12,20 @@
   &:hover {
     background-color: rgba(0, 210, 91, .5);
     transition: background-color .5s ease;
+  }
+
+  &--transparent {
+    @include flex-center;
+
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid var(--light-color);
+
+    &:hover {
+      background-color: var(--light-color);
+      color: var(--danger-color);
+      transition: all .5s ease;
+    }
   }
 }
