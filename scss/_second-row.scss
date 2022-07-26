@@ -1,0 +1,5 @@
+.second-row {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  gap: var(--main-gap);
+}

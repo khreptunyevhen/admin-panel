@@ -1,0 +1,51 @@
+.transaction {
+  @include flex-column;
+
+  gap: var(--main-gap);
+  border-radius: var(--box-border-radius);
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 20px;
+
+  &__diagram {
+    position: relative;
+    flex: 1 1 auto;
+  }
+  &__diagram-value { 
+    @include flex-column;
+
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+
+    span {
+      color: var(--primary-text-color);
+      display: inline-block;
+    }
+  }
+  &__item {
+    @include flex-jc-center;
+    
+    border-radius: var(--box-border-radius);
+    background-color: var(--primary-hover-color);
+
+    padding: 10px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__text {
+    color: var(--primary-text-color);
+    font-size: 12px;
+    margin-top: 6px;
+  }
+  &__price {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

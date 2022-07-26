@@ -1,0 +1,15 @@
+.projects {
+  border-radius: var(--box-border-radius);
+  background-color: var(--primary-color);
+  padding: 20px;
+
+  &__title {
+    @include flex-jc-center;
+
+    span {
+      color: var(--primary-text-color);
+      font-size: 14px;
+    }
+  }
+
+}

@@ -3,7 +3,7 @@
   min-width: 100%;
 
   border-radius: var(--box-border-radius);
-  gap: 10px;
+  gap: calc(var(--main-gap) / 2);
   background-image: linear-gradient(to left, #d41459, #911a6c);
   padding: 0 30px;
   color: var(--light-color);

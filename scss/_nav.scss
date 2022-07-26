@@ -24,7 +24,7 @@
   }
   &__link {
     @include flex-st-center;
-    gap: 30px;
+    gap: var(--main-gap);
   }
 
   .material-symbols-sharp {

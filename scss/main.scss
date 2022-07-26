@@ -46,11 +46,16 @@ input {
 @import '_nav';
 @import '_update';
 @import '_price';
+@import '_transaction';
+@import '_projects';
+@import '_project-item';
+@import '_title';
 
 // BLOCKS
 @import '_header.scss';
 @import '_sidebar.scss';
 @import '_main-section.scss';
+@import '_second-row';
 
 .container {
   max-width: 1500px;

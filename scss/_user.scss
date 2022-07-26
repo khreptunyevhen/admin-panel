@@ -1,6 +1,6 @@
 .user {
   @include flex-jc-center;
-  gap: 10px;
+  gap: var(--main-gap);
   color: var(--light-color);
 
   &__photo {

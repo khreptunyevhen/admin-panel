@@ -1,7 +1,7 @@
 .price {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: var(--main-gap);
 
   &__item {
     @include flex-jc-center;

@@ -13,7 +13,7 @@
 
   &__container {
     @include flex-jc-center;
-    gap: 20px;
+    gap: var(--main-gap);
 
     & > .material-symbols-sharp {
       margin-left: 36px;
