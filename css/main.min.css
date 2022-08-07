@@ -333,6 +333,10 @@ input {
   gap: var(--main-gap);
 }
 
+.price__title {
+  margin-bottom: var(--main-gap);
+}
+
 .price__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,6 +407,23 @@ input {
 
 .price .symbol--danger::after {
   background-color: rgba(252, 66, 74, 0.5);
+}
+
+.price--big {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.price--big .material-symbols-sharp {
+  font-size: 50px;
+}
+
+.price--big .material-symbols-sharp::after {
+  display: none;
+}
+
+.price--big .material-symbols-sharp.symbol-color--4 {
+  color: var(--secondary-color);
 }
 
 @media (max-width: 1219.98px) {
