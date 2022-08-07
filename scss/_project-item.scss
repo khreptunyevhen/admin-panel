@@ -56,3 +56,36 @@
   border-bottom: 1px solid var(--primary-text-color);
   padding-bottom: 20px;
 }
+
+// MEDIA
+
+// PC
+@media (max-width: 1087.98px) {
+
+}
+// TABLET
+@media (max-width: 991.98px) {
+
+}
+
+// MOBILE
+@media (max-width: 767.98px) {
+
+}
+
+// MOBILE SMALL
+@media (max-width: 479.98px) {
+
+  .project-item {
+
+    &__content {
+
+      &-left {
+        display: none;
+      }
+      &-rigth {
+        margin-left: auto;
+      }
+    }
+  }
+}

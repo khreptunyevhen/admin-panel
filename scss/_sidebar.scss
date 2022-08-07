@@ -1,6 +1,6 @@
 .sidebar {
   background-color: var(--primary-color);
-  height: 100vh;
+  min-height: 100vh;
   padding: 10px 20px;
 
   &__user {
@@ -41,10 +41,6 @@
 
 // MEDIA
 
-// PC
-@media (max-width: 1087.98px) {
-  
-}
 // TABLET
 @media (max-width: 991.98px) {
 

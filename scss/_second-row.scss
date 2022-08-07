@@ -3,3 +3,26 @@
   grid-template-columns: 35% 1fr;
   gap: var(--main-gap);
 }
+
+// MEDIA
+
+// PC
+@media (max-width: 1087.98px) {
+  .second-row {
+    grid-template-columns: 1fr;
+  }
+}
+// TABLET
+@media (max-width: 991.98px) {
+
+}
+
+// MOBILE
+@media (max-width: 767.98px) {
+
+}
+
+// MOBILE SMALL
+@media (max-width: 479.98px) {
+
+}

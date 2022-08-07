@@ -1,3 +1,5 @@
+// Transaction Chart
+
 let transactionChartOptions = {
   series: [55, 25, 20],
   chart: {
@@ -11,11 +13,22 @@ let transactionChartOptions = {
   dataLabels: {
     enabled: false
   },
-  plotOptions: {
-    pie: {
-      size: 200
+  responsive: [{
+    breakpoint: 1087.98,
+    options: {
+      chart: {
+        width: 300,
+      }
     }
-  }
+  },
+  {
+    breakpoint: 479.98,
+    options: {
+      chart: {
+        width: `${100}%`,
+      }
+    }
+  }]
 };
 
 let transactionChart = new ApexCharts(document.querySelector("#diagram"), transactionChartOptions);

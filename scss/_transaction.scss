@@ -49,3 +49,15 @@
     font-weight: 500;
   }
 }
+
+// MEDIA
+
+// PC
+@media (max-width: 1087.98px) {
+  .transaction {
+
+    &__diagram {
+      margin: 0 auto;
+    }
+  }
+}

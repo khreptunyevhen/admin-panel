@@ -3,6 +3,9 @@
   background-color: var(--primary-color);
   padding: 20px;
 
+  &__body {
+    margin-top: var(--main-gap);
+  }
   &__title {
     @include flex-jc-center;
 
